@@ -1,0 +1,29 @@
+ *{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    color: white;
+}
+.navbar{
+    background-color: rgb(114, 164, 114);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin:20px;
+    padding: 15px;
+    border-radius: 5px;
+}
+.navbar li{
+    display: inline-block;
+    margin-left:60px;
+}
+button{
+    color: white;
+    background-color: darkgreen;
+    padding: 5px;
+border-radius: 4px;
+}
+.group:hover{
+ border: 2px solid grey;
+}
