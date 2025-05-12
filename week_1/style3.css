@@ -25,5 +25,9 @@ button{
 border-radius: 4px;
 }
 .group:hover{
- border: 2px solid grey;
+ color:green;
+}
+input{
+    padding: 10px;
+    border-radius: 5px;
 }
