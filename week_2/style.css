@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #ffe3e3, #e6f0ff);
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    position: relative;
+    top: 0;
+}
+
+.navlogo{
+    height: 30px;
+    width: 110px;
+}
+.logo {
+    background-image: url(logoRewritely.a5d84a3d.svg);
+    background-size: cover;
+    height: 30px;
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2.8rem;
+    list-style: none;
+    align-items: center;
+}
+.nav-links a:hover{
+    color:skyblue
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.tag {
+    background: rgb(35, 10, 175);
+    color: white;
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.lang-select {
+    padding: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.login {
+    background: #f0f0f0;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup {
+    background: #276ef1;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+.rated-badge {
+    background: #eee;
+    color: #454242;
+    font-size: 1.0rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.highlight {
+    color: #276ef1;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 1.5rem;
+}
+
+.yellow-highlight {
+  background: linear-gradient(to right, white, #ece881);
+    padding: 0.1rem 0.3rem;
+}
+
+.trust-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.avatars img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: -10px;
+    border: 2px solid white;
+}
+
+.rating {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.cta-btn {
+    background: #276ef1;
+    color: white;
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cta-btn:hover {
+    background: #174dc9;
+}
+
+.magic{
+    position: relative;
+    margin-top:18px ;
+    display: flex;
+    justify-content: end;
+    margin-right:290px;
+    color:#174dc9;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.arrow{
+    margin-right:13px;
+    
+}
+
+/* Mobile (up to 768px) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.8rem;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .nav-actions {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .trust-row {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .cta-btn {
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
+/* Extra small devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .rated-badge {
+        font-size: 0.75rem;
+    }
+
+    .cta-btn {
+        font-size: 0.9rem;
+    }
+
+    .avatars img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .plus {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.5rem;
+    }
+}
